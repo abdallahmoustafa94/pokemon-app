@@ -9,19 +9,18 @@ import {
 export const pokemonApi = createApi({
   reducerPath: "pokemonApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: (
-      import.meta.env.VITE_API_BASE_URL || "https://pokeapi.co/api/v2"
-    ).replace(/\/$/, ""),
+    baseUrl:
+      import.meta.env.VITE_API_BASE_URL?.trim() || "https://pokeapi.co/api/v2",
   }),
   endpoints: (builder) => ({
     getPokemonList: builder.query<PokemonList, void | PokemonListQuery>({
       query: (params) => ({
-        url: "/pokemon",
+        url: "pokemon",
         params: { limit: 151, ...params },
       }),
     }),
     getPokemonByName: builder.query<PokemonDetail, PokemonDetailQuery["name"]>({
-      query: (name) => `/pokemon/${name}`,
+      query: (name) => `pokemon/${name}`,
     }),
   }),
 });
