@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.list-container {
+  flex: 1;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.detail-container {
+  flex: 1;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pokemon-item {
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.pokemon-detail {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.pokemon-detail h2 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.pokemon-detail img {
+  width: 200px;
+  height: 200px;
+}

@@ -1,0 +1,21 @@
+.pokemon-card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.pokemon-card h2 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.pokemon-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.pokemon-info {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}

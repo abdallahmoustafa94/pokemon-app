@@ -1,0 +1,10 @@
+.pokemon-item {
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pokemon-item:hover {
+  background-color: #f0f0f0;
+}
